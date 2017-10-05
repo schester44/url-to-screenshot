@@ -21,6 +21,29 @@ Automatically caches screenshots to make them load faster, and updates them peri
 
 ## TODO ## 
 - Add params for setting the webshot windowSize (currently using w & h which will be repurposed for the screenshot size.
+- Change models to plugins, add AWS & S3 Support
+- Create Config File
+
+import AWS from "./plugins/AWS"
+
+
+{
+  "plugins": [ new AWS({
+    username: 'something',
+    password: 'soemthing'
+  }) ]
+}
+
+{
+  "plugins": [ new Local({ savePath: 'screenshots' }) ]
+}
+
+// this line should be better.
+const file = config.plugins ? config.plugins : config.plugin;
+
+if ( ! file ) {
+ throw error()
+}
 
 ----------
 

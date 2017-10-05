@@ -11,8 +11,6 @@ class LocalFileModel {
 		this.filepath = path.join(this.path, this.filename)
 		this.url = url
 		this.options = options
-
-		console.log(this.options);
 	}
 
 	exists() {

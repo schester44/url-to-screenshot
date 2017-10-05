@@ -9,7 +9,6 @@ const defaultRoute = (req, res) => {
 	const params = url_parts.query
 
 	if (!utils.validUrl(params.url)) {
-		console.warn("Invalid url attempt:", params.url)
 		res.sendFile(path.resolve(__dirname, '..', '..', 'build', 'index.html'));
 		return
 	}
@@ -19,13 +18,11 @@ const defaultRoute = (req, res) => {
 	const file = new File(params.url, options)
 
 	if (!file.exists() || options.force) {
-		try {
-			(async () => {
-				const saved = await file.save()
-			})
-		} catch (e) {
-			console.warn(e)
-		}
+		file.save().then(image => {
+			file.display(res)
+		})
+
+		return;
 	}
 
 	file.display(res)

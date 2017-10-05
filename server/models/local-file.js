@@ -7,10 +7,12 @@ class LocalFileModel {
 	constructor(url, options) {
 		this.uid = shorter.compress(url).toString("hex")
 		this.filename = `${this.uid}.png`
-		this.path = path.resolve(__dirname, "../", "screenshots")
+		this.path = path.resolve(__dirname, "..", "screenshots")
 		this.filepath = path.join(this.path, this.filename)
 		this.url = url
 		this.options = options
+
+		console.log(this.options);
 	}
 
 	exists() {

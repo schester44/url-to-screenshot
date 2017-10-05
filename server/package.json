@@ -1,0 +1,17 @@
+{
+  "name": "screen-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.1",
+    "sharp": "^0.18.4",
+    "shorter": "^0.2.1",
+    "webshot": "^0.18.0"
+  }
+}

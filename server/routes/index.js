@@ -1,17 +1,18 @@
-const File = require("../models/local-file.js")
-const utils = require("../helpers")
 const url = require("url")
+const path = require('path')
+const utils = require("../helpers")
+
+const File = require("../models/local-file.js")
 
 const defaultRoute = (req, res) => {
 	const url_parts = url.parse(req.url, true)
 	const params = url_parts.query
+
 	if (!utils.validUrl(params.url)) {
 		console.warn("Invalid url attempt:", params.url)
-		res.send("landing page")
+		res.sendFile(path.resolve(__dirname, '..', '..', 'build', 'index.html'));
 		return
 	}
-
-	console.log(`Request received for ${params.url}`)
 
 	const options = utils.getRequestedOptions(params)
 

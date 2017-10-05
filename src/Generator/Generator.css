@@ -1,0 +1,102 @@
+
+.Generator {
+  top: -50px;
+  position: absolute;
+  padding: 27px 20px 20px 20px;
+  width: 100%;
+  min-height: 300px;
+  background: rgba(7, 91, 213, 1.0);
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0px 5px 5px -2px rgba(98,98,98,0.2);
+}
+
+
+.Generator__more-options {
+  padding-top: 25px;
+  margin-top: 33px;
+  margin-bottom: 10px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.Generator__more-options p {
+  text-align: center;
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+
+.Generator__more-options p:hover {
+  color: rgba(255,255,255,0.9);
+}
+
+.Generator__generate {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.Generator__generate-btn {
+  width: 100%;
+  padding: 18px;
+  color: white;
+  background: rgba(74, 152, 253, 1.0);
+  border: 0;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.Generator__generate-btn:hover {
+  background: rgba(74, 162, 255, 1.0);
+}
+
+label {
+  font-size: 12px;
+  color: white;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 7px;
+}
+
+input[type="text"] {
+  color: white;
+  border: 0;
+  font-size: 16px;
+  font-size: 100;
+  padding: 8px 16px;
+  background: rgba(255,255,255,0.1);
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
+  margin-bottom: 7px;
+  line-height: 26px;
+}
+
+.form-bottom {
+  margin-top: 24px;
+}
+
+.form-bottom div {
+  width: 100%;
+}
+
+.form-bottom div:first-child { 
+  padding-right: 10px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(255,255,255,0.3);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(255,255,255,0.3);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(255,255,255,0.3);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(255,255,255,0.3);
+}
+
+

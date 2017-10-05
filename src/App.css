@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, .App {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: rgba(255, 255, 255, 1.0);
+}
+
+.flex {
+  display: flex;
+}
+
+.Header {
+  padding: 16vh 10vw;
+  background: rgba(247, 248, 250, 1.0);
+  display: flex;
+  justify-content: center;
+}
+
+.Header__h1 {
+  font-size: 48px;
+  line-height: 1.4;
+}
+
+.Header__h2 {
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: -0.5px;
+  color: rgba(36, 36, 36, 0.8);
+}
+
+.Header__left-text {
+  width: 50%;
+}
+
+.Header__right {
+  width: 50%;
+  position: relative;
+}

@@ -1,17 +1,24 @@
 {
   "name": "screen-page",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "homepage": ".",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "author": "Steven Chester <schester44@gmail.com>",
   "dependencies": {
     "express": "^4.16.1",
     "sharp": "^0.18.4",
     "shorter": "^0.2.1",
-    "webshot": "^0.18.0"
+    "webshot": "^0.18.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.14"
+  },
+  "scripts": {
+    "server": "cd server && nodemon index.js",
+    "start": "react-scripts start && nodem",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }

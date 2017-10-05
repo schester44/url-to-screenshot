@@ -1,0 +1,40 @@
+.GeneratedLinkModal {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,0.9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgba(32,32,32,1.0);
+	padding-bottom: 100px;
+}
+
+
+.GeneratedLinkModal__close {
+	position: absolute;
+	top: 40px;
+	right: 60px;
+	cursor: pointer;
+}
+
+.GeneratedLinkModal__close img {
+	width: 60px;
+	height: 60px;
+}
+
+.GeneratedLinkModal__close:hover {
+	color: rgba(32,32,32,1);
+}
+
+.GeneratedLinkModal__link {
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 35px;
+	color: rgba(32,32,32,1.0);
+	max-width: 75%;
+	width: 100%;
+	text-align: center;
+}

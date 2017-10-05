@@ -30,9 +30,12 @@ Automatically caches screenshots to make them load faster, and updates them peri
 ### Install Steps ###
 
  1. git clone
-    2. yarn install
-    3. yarn run build
-    4. yarn run server
+ 
+ 2. yarn install
+ 
+ 3. yarn run build
+ 
+ 4. yarn run server
 
 > NOTE: The server serves react from the ./build directory. So you must
 > build the client before running the server.

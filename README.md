@@ -1,5 +1,4 @@
-# Screenie
-## The screenshot genie
+# Screenie - the screenshot genie
 ### Give a url, get a screenshot...
 A micro service API for creating and serving website screenshots.
 

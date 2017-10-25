@@ -1,4 +1,6 @@
-# Give a url, get a screenshot...
+# Screenie
+## The screenshot genie
+### Give a url, get a screenshot...
 A micro service API for creating and serving website screenshots.
 
 Automatically caches screenshots to make them load faster, and updates them periodically. Stores all of your screenshots so you don't have to worry about copying them over to another server.
